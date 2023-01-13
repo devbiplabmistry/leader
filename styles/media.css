@@ -1,0 +1,17 @@
+@media (max-width:575px){
+    .left-nav{
+        display: none;
+    }
+    .menu .right-nav ul a{
+        margin-left: 15px;
+    }
+    .playes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player-info{
+        flex-direction: column;
+    }
+    .top-player{
+        text-align: center;
+    }
+}
