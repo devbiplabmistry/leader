@@ -1,10 +1,56 @@
+/* small device  */
+@media (min-width:576px) and (max-width:767px){
+ /* navbar css start */
+ .left-nav{
+    display: none;
+}
+.menu .right-nav {
+    margin: 0 auto;
+}
+/* navbar css End */
+.playes {
+    	grid-template-columns: repeat(2,1fr);
+	
+}
+  /* blog css start  */
+  .top-blog-item .blog-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.blog-container{
+    grid-template-columns: repeat(1,1fr);
+}
+.top-blog-item{
+    flex-direction: column;
+    text-align: center;
+}
+.blog-content h3{
+    padding-right: 13px;
+}
+/* blog css End */
+.course-wrapper{
+    flex-wrap: wrap;
+    gap: 3px;
+    justify-content: space-evenly;
+    row-gap: 20px;
+}
+.course-item{
+    width: 252px;
+}
+
+}
+/* x-small device  */
 @media (max-width:575px){
+    /* navbar css start */
     .left-nav{
         display: none;
     }
     .menu .right-nav ul a{
         margin-left: 15px;
     }
+    /* navbar css End */
+    /* player css start  */
     .playes{
         grid-template-columns: repeat(1,1fr);
     }
@@ -14,4 +60,28 @@
     .top-player{
         text-align: center;
     }
+    /* player css End */
+    /* blog css start  */
+    .top-blog-item .blog-img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .blog-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-blog-item{
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog-content h3{
+        padding-right: 13px;
+    }
+    /* blog css End */
+    /* course css start  */
+    .course-wrapper{
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* course css End */
 }
